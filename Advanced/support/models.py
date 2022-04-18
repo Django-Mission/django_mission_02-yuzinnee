@@ -61,10 +61,4 @@ class Answer(models.Model):
 
 # 자꾸 오류떠서 계속해서 migrations-migrate반복,, 검색결과 migrations가 이미 정해져있으면 그런가봄.. 터미널 오류 계속 검색해서 해결함
 # 체크박스는 models.BooleanField 로 생성
-#class Answer(models.Model):
-#    answer_content = models.TextField(verbose_name='답변내용')
-#    post = models.ForeignKey(to='Inquiry', verbose_name='참조 문의글', on_delete=models.CASCADE)
-#    writer = models.ForeignKey(to=User, on_delete=models.CASCADE, null=True, blank=True)
-#    created_date = models.DateTimeField(verbose_name='생성일시', auto_now_add=True)
-#    updated_date = models.DateTimeField(verbose_name='최종 수정일', auto_now=True)
 
