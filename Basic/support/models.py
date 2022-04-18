@@ -31,7 +31,6 @@ class Faq(models.Model):
 
 # 최종수정일시
     updated_date = models.DateTimeField(verbose_name='최종 수정일시', auto_now=True, null=True)
-    print(f'updated_date')
     def __str__(self):
         return f'[{self.pk}]{self.question}'
 # migration이 안되었던 이유는 null이나 default값이 설정되지 않았기 때문
